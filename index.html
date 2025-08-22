@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chopper AI - Medical Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="tony-chopper-removebg-preview.png" alt="Chopper AI Logo" class="logo">
+    <h1>🩺 Chopper AI</h1>
+    <p>Your personal medical prevention & recovery assistant</p>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section id="intro">
+      <h2>Welcome to Chopper AI</h2>
+      <p>Ask medical-related questions or explore prevention & recovery guides below.  
+         ⚠️ This chatbot is for general awareness only and is NOT a substitute for professional medical advice.</p>
+    </section>
+
+    <!-- Medical Guides -->
+    <section id="guides">
+      <h2>📚 Medical Awareness Guides</h2>
+      <div class="guide-buttons">
+        <button onclick="loadContent('comprehensive')">Comprehensive Medical Guide</button>
+        <button onclick="loadContent('ultimate')">Ultimate Prevention & Recovery Guide</button>
+      </div>
+      <div id="contentArea">
+        <p>Click a guide above to view details.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Chopper AI | General Awareness Only</p>
+  </footer>
+
+  <!-- Chatbase Chatbot -->
+  <script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+      window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+      window.chatbase.q.push(arguments)};
+      window.chatbase=new Proxy(window.chatbase,{get(target,prop){
+        if(prop==="q"){return target.q}
+        return(...args)=>target(prop,...args)}})}
+      const onLoad=function(){const script=document.createElement("script");
+      script.src="https://www.chatbase.co/embed.min.js";
+      script.id="mZpwxgGx8OsL-npJnawat";
+      script.domain="www.chatbase.co";
+      document.body.appendChild(script)};
+      if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
